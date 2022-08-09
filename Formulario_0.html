@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang= en>
+<head>
+<meta chaset="utf-8">
+<link rel="stylesheet" href="styles.css"> 
+<title>Formulário de pesquisa</title>
+</meta>
+</head>
+<body>
+<H1 id="title">Formulário Cadastro Pessoa fisica</h1>
+<p id="description">Formulário desenvolvido para o cadastro de pessoas ficias para o banco de dados da empresa</p>
+<fieldset>
+<form id=survey-form>
+  
+  <label id="name-label"> Insira seu nome aqui: <input type="text" id="name" placeholder="João Souza" required></label>
+  <label id="email-label"> Insira seu email aqui:<input type="email" id="email" placeholder="exaple@exaple.com" required></label>
+  <label id="number-label"> Qual a sua idade (anos)? <input type="number" id="number" min="13" max="100" placeholder="digite sua idade"></label>
+
+  <label>Qual o seu sexo?<label>
+  <label><input type="radio" name="sexo" value="masc"> Masculino </label>
+  <label><input type="radio" name="sexo" value="fem"> Feminino </label>
+  <label><input type="radio" name="sexo" value="outro"> Outro <input type="text">
+
+  <label>Como nos conheceu?</label>
+  <select id="dropdown">
+    <option>(selecione um)</option>
+    <option>Amigos</option>
+    <option>Internet</option>
+    <option>Outros</option>
+  </select>
+  
+  <label>Qual área de atuação é do seu interesse?</label>
+    <label><input type="checkbox" name="HTML" value="html"> HTML</label>
+    <label><input type="checkbox" name="PY" value="py"> Python</label>
+    <label><input type="checkbox" name="JAVA" value="java"> JAVA</label>
+    <label><input type="checkbox" name="JS" value="js"> JavaScript</label>
+ <label>
+  <label>Fale um pouco sobre você:
+    <textarea name="bio" rows="3" cols="30" placeholder="Eu gosto de escutar musica enquanto programo..." ></textarea>
+ 
+
+  <input id="submit" type="submit" value="Submit">
+  </label>
+  
+</form>
+</body> 
+</html>
